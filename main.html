@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!-- jquery 실행 -->
+   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+   <title>Culture Webzine</title>
+   <link rel="stylesheet" type="text/css" href="main.css">
+   <script src="main.js"></script>
+</head>
+<body>
+   <header>
+      <div id="title">Culturing</div>
+   <!--       <div id="ctime">
+         <script>setCTime();</script>
+      </div> -->
+      <div id="menu_img">< MENU</div>
+   </header>
+   <div id="main_content">
+      <div class="sub_content">
+         <p id="text1">Culture for you</p>
+         <img src="logo.jpg" id="logo">
+         <p id="text2">Look around the performance for you today.</p>
+      </div>
+      <div class="sub_content">
+         <p class="sub_title">------------------------------------&nbsp<strong>Today's Recommendation</strong>&nbsp------------------------------------</p>
+         <p class="genre">Musical</p>
+         <p class="genre">Play</p>
+         <p class="genre">Concert</p>
+         <p class="genre">Classic</p>
+         <img alt="Musical" class="recommend" src="img/anna.gif">
+         <img alt="Play" class="recommend" src="img/killmenow.gif">
+         <img alt="Concert" class="recommend" src="img/magicshop.gif">
+         <img alt="Classic" class="recommend" src="img/parkmusic.gif">
+      </div>
+      <div id="page_load"></div>
+      <div class="sub_content">
+         <p class="sub_title">---------------------------------------&nbsp<strong>Today's Time-Table</strong>&nbsp---------------------------------------</p>
+         <canvas width="1000px" height="500px" id="timetable"></canvas>
+      </div>
+      <div class="sub_content">
+         <p class="sub_title">-------------------------------------&nbsp<strong>Concert Hall Information</strong>&nbsp-------------------------------------</p>
+         <p id="info">If you want to know more information about each hall, click the image.</p>
+         <div id="slide">
+            <img src="img/artcenter.jpg" alt="">
+            <img src="img/bluesquare.jpg" alt="" class="alt">
+            <img src="img/chalotte.jpg" alt="" class="alt">
+            <img src="img/cmah_arthall.jpg" alt="" class="alt">
+            <img src="img/olympic.jpg" alt="" class="alt">
+            <img src="img/sejong.jpg" alt="" class="alt">
+         </div>
+         <div class="hall_info"><strong>Seoul Arts Center</strong></div>
+         <div id="hall_info"></div>
+      </div>
+   </div>
+   <div id="menu_img_help"></div>
+   <div id="menu">
+      <div id="return">X</div>
+      <div id="search_box">
+         <form>
+            <input type="text" id="input-search" autocomplete=off>
+            <input type="submit" id="input-search-submit" value="검색">
+            <div id="input-search-word-box">
+               <div class="input-search-word"></div>
+               <div class="input-search-word"></div>
+               <div class="input-search-word"></div>
+            </div>
+         </form>
+      </div>
+      <div class="main_menu">Musical</div>
+      <div class="main_menu">Play</div>
+      <div class="main_menu">Concert</div>
+      <div class="main_menu">Classic</div>
+   </div>
+   <footer>
+      <p>Web Programming, Team Project 2019</p>
+      <p>Kim Jeonghan & Park Yubin & Lee Doheon & Lee Seungyeop</p>
+   </footer>
+</body>
+</html>

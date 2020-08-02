@@ -1,0 +1,320 @@
+*{margin: 0 auto; padding: 0;}
+body{width: 100%; margin: 0 auto;}
+li{ list-style: none; }
+a{ text-decoration: none; }
+img{ border: 0; }
+hr{ border: dotted 1px #FF0000;}
+header{ 
+   margin: 0 auto;
+   width: 100%; height: 50px; background-color: white;
+   position: fixed;/*header는 항상 고정(스크롤을 내려도 header가 보이게)*/
+   top: 0; padding: 20px 30px 20px 30px;
+   color: #FF0000;
+   border-bottom: 1px dotted #FF0000;
+   float: left;
+   z-index: 2;
+}
+#title{
+   float: left; 
+   height: 40px;
+   margin: 0; padding: 0;
+   font-family: 'Indie Flower', cursive;
+   text-align: center; 
+   font-size: 35px; font-weight: bold;
+   top: 0; left: 0;
+}
+#title:hover{
+   color: #FFA7A7;
+}
+
+#menu_img{
+   font-family: 'Indie Flower', cursive;
+   z-index: 1;
+   float: right;
+   height: 30px; width: 100px;
+   padding: 10px;
+   margin-right: 30px;
+   font-size: 25px;
+   line-height: 40px;
+   text-align: center;
+}
+#menu_img:hover{
+   color: #FFA7A7;
+}
+#menu_img_help{
+   display: none;
+}
+.menu_help{/*click 시 가시화될 class 속성*/
+   position: fixed;
+   background-color: #FFEAEA;
+   top: 0;
+   left: 0;
+   float: left;
+   z-index: 1;
+   margin: 0; padding: 0;
+   opacity: 0.8;
+}
+.menu_popup{/*click 시 가시화될 class 속성*/
+   padding-top: 50px;
+    padding-bottom: 50px;
+   width: 300px;
+   height: 70%;
+   z-index: 1;
+   float: right;
+   top: 90px; 
+   right: 0;
+   position: fixed;
+   background-color: white;
+   border-top: 1px dotted #FF0000;
+}
+#menu{
+   display: none;
+}
+#return{
+   font-family: 'Indie Flower', cursive;
+   font-size: 35px;
+   color: #FF0000;
+   width: 60px; height: 60px;
+
+}
+.main_menu,#search_box{
+   font-family: 'Indie Flower', cursive;
+   font-size: 30px;
+   width: 280px; height: 50px;
+   margin: 20 auto;
+   text-align: center; line-height: 50px;
+   color: #FF0000;
+   padding-top: 10px;
+   padding-bottom: 10px; 
+   border-bottom: 1px dotted #FF0000;
+
+}
+.main_menu:hover{
+   background-color: #FF4848; 
+   color: white;
+   text-decoration: underline;
+   border-bottom: 1px dotted white;
+}
+
+
+#top-content{
+   border-bottom: 1px dotted #FF0000;
+}
+#top-content img{
+   width:218px;
+   height:280px;
+   margin-bottom:20px;
+}
+#top-content p{
+   margin: 10px;
+   font-weight: bold;
+}
+#main_content{
+   padding-top:91px;
+}
+.sub-menu{
+   font-family: 'Indie Flower', cursive;
+   font-size: 15px;
+   width: 100px; height: 40px;
+   text-align: center; line-height: 40px;
+   color: #FF0000;
+   border-bottom: 1px dotted #FF0000;
+   padding:5px;
+   margin: 0px 40px;
+}
+.sub-menu a:link{
+   color: #FF0000;
+}
+.sub-menu a:hover{
+   cursor: pointer; 
+   /*color: white;
+   border-bottom: 1px dotted white;*/
+}
+.sub-menu a:active{
+   color: #FF0000;
+}
+.sub-menu a:visited{
+   color: #FF0000;
+}
+#left-submenu{
+   float:left;
+   position:relative;
+   width:200px;
+}
+#right-article{
+   width:800px;
+   z-index: -1;
+}
+#down-content{
+   /*overflow:hidden;
+   */position:relative;
+}
+#top-content p{
+   font-family: 'Indie Flower', cursive;
+   color: #FF0000;
+   text-align:center;
+   font-size:25px;
+}
+#day{
+   width:110px;
+   height:40px;
+   border:1px solid #FF0000;
+   margin-top:10px;
+   border-radius: 15px;
+   font-family: 'Jua', sans-serif;
+   color: #FF0000;
+   line-height: 40px;
+   text-align: center;
+   font-size: 0.85em;
+}
+#main_content{
+   margin-bottom: 20px;
+}
+
+#top-content{
+   margin-top:30px;
+   margin-bottom: 30px;
+   text-align: center;
+}
+#bookmark{
+   height: 370px;
+   width:100px;
+   line-height: 40px;
+   font-size: 20px;
+   padding:3px;
+   border-radius: 15px;
+   text-align:center;
+   font-family: 'Indie Flower', cursive;
+   color: #FF0000;
+   float:right;
+   border:1px dotted #FF0000;
+   position:absolute;
+   top:0;
+   right: 80px;
+}
+#back{
+   height: 30px;
+   width:65px;
+   line-height: 40px;
+   font-size: 20px;
+   padding: 5px;
+   float:right;
+   text-align:center;
+   font-family: 'Indie Flower', cursive;
+   color: #FF0000;
+}
+#star{
+   height: 30px;
+   width:65px;
+   line-height: 40px;
+   font-size: 20px;
+   padding: 5px;
+   float:left;
+   text-align:center;
+   font-family: 'Indie Flower', cursive;
+   color: #FF0000;
+}
+#list{
+   height: 40px;
+   width:180px;
+   line-height: 40px;
+   font-size: 25px;
+   padding-top: 5px;
+   padding-bottom: 15px;
+   font-family: 'Indie Flower', cursive;
+   color: #FF0000;
+   text-align: center;
+}
+#sub_title{
+   width: 600px;
+   margin: 20px auto;
+   height: 150px;
+/*   border-bottom: 1px dotted #FF0000;  
+*/   font-family: 'Jua', sans-serif;
+   color: black;   
+   text-align: center;
+   font-size: 30px;
+   line-height: 150px;
+}
+#move{
+   position:absolute;
+   top:0;
+   /*overflow:hidden;*/
+}
+#bookmark img{
+   width:80px;
+   height:70px;
+}
+img.closed{
+   display:none;
+}
+footer{
+   padding-top: 20px; padding-bottom: 20px; width: 100%; background-color: #FFD8D8;
+   text-align: center;
+}
+footer>p{
+   font-family: 'Nanum Pen Script', cursive;
+   font-weight: bold;
+   text-align: center;
+}
+#input-search{
+   display: block;
+   height: 40px; width: 150px;
+   border: 1px solid #FF0000;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
+   float: left;
+   margin-left: 36px;
+}
+#input-search-submit{
+   display: block;
+   height: 42px; width: 60px;
+   border: 1px solid #FF0000;
+   border-top-right-radius: 15px;
+   border-bottom-right-radius: 15px;
+   font-family: 'Jua', sans-serif;
+   color: #FF0000; font-size: 15px;
+   margin-right: 36px;
+   background-color: #FFD8D8;
+}
+
+#search-box{
+   position:relative;
+}
+
+#input-search-word-box{
+   display:none;
+   position:absolute;
+   left:61px;
+}
+
+.input-search-word{
+   border:1px solid #ff0000;
+   width:185px;
+   min-height:40px;
+   line-height:40px;
+   background-color:#ffffff;
+
+   font-family: 'Jua', sans-serif;
+   font-size:20px;
+}
+
+.input-search-word:last-child{
+   border-bottom-left-radius:15px;
+   border-bottom-right-radius:15px;
+}
+#info,#Price,#Link,#Article,#Contents{
+   font-family: 'Jua', sans-serif;
+   color: black; font-size: 20px;
+   margin: 20px auto;
+   text-align: center;
+}
+.showInfo p{
+   font-family: 'Jua', sans-serif;
+   color: #FF0000; font-size: 25px;
+   margin: 10px;   
+   text-align: center;
+}
+#Link{
+   display: none;
+}
